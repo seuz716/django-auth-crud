@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <head>
+        <title>Sign Up</title>
+        {% block styles %}  <!-- Bloque para los estilos -->
+            <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        {% endblock %}
+    </head>
+
+    <body>
+        <h1>Sign Up</h1>
+        
+        <form action="/signup/" method="POST">
+            {% csrf_token %}
+            
+            <div>
+                <label for="id_username">Username:</label>
+                {{ form.username }}
+            </div>
+            
+            <div>
+                <label for="id_password1">Password:</label>
+                {{ form.password1 }}
+            </div>
+            
+            <div>
+                <label for="id_password2">Confirm Password:</label>
+                {{ form.password2 }}
+            </div>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        {% if form.errors %}
+					  <div class="carderror">
+					    <ul>
+					      {% for field_errors in form.errors.values %}
+					        {% for error in field_errors %}
+					          <li>{{ error }}</li>
+					        {% endfor %}
+					      {% endfor %}
+					    </ul>
+					  </div>
+			{% endif %}
+
+
+
+    </body>
+
+{% endblock %}
+

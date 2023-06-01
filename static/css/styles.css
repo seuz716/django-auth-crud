@@ -1,0 +1,184 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+   margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #ff0000;
+}
+
+form {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff7f50;
+}
+
+/* Estilos del contenido principal */
+main {
+  padding: 20px 0;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.cuerpo {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.linea {
+  font-family: cursive;
+  color: red;
+  font-size: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.carderror {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card .error {
+  background-color: #ffe7e7;
+  border-color: #ff0000;
+}
+
+.card.success {
+  background-color: #e7f5e7;
+  border-color: #00ff00;
+}
+
+
+/* styles.css */
+
+.task-card {
+    /* Estilos para las tarjetas de tarea */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.task-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.task-card p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+
+
+/* Estilos responsive */
+
+@media screen and (max-width: 768px) {
+  /* Ajustes para dispositivos móviles */
+  header nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
